@@ -1,0 +1,14 @@
+{{#if posts.length}}
+<section>
+  
+  <ol class="fullclick">
+    {{#each posts as |post|}}
+    <li>
+      {{> home-post post}}
+    
+      
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}

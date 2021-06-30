@@ -1,0 +1,28 @@
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+<div style="background-color: white;">
+<a href="/post/{{id}}">
+ 
+     <div>
+        <h2>Movie Title: {{title}} </h2>
+        <span> Posted by {{user.username}} on {{format_date created_at}}</span>
+   
+        </div>
+       <p><h3>Genre: {{genre}}</h2>
+        
+        <p>
+            <h3>Movie Review:</h2>
+         {{movie_review}}
+        </p>
+        <h4>Star Rating: <span style="font-weight: 100;">{{star_rating}}/5</span></h4>
+         {{vote_count}} {{format_plural "upvote" vote_count}} 
+         <button> <p>{{comments.length}} {{format_plural "comment" comments.length}}</p></button>
+        
+   
+        
+      
+
+      </a>
+      </div>
